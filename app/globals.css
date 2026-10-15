@@ -77,3 +77,19 @@ body{background-image:radial-gradient(ellipse at 80% 5%,rgba(77,83,139,.12),tran
 .hero-bottomline{position:static;margin-top:28px;font-size:8px;letter-spacing:.5px}
 .hero-bottomline span{max-width:32%}
 }
+
+/* V15 mobile : le visuel principal remonte sous le titre, pleine largeur */
+@media(max-width:720px){
+.hero{padding-top:34px}
+.hero-copy{display:contents}
+.hero-copy .eyebrow{order:1}
+.hero-copy h1{order:2;margin-bottom:0}
+.hero-image-visual{order:3;width:calc(100% + 38px);margin:22px -19px 26px;height:auto}
+.hero-image-frame{border-radius:0;aspect-ratio:2/1;box-shadow:none}
+.hero-image-frame>img{object-position:30% 50%}
+.hero-copy .hero-lede{order:4;margin-top:0}
+.hero-copy .hero-actions{order:5}
+.hero-copy .hero-proof{order:6}
+.hero-bottomline{order:7}
+}
+@media(max-width:720px){.hero{overflow:visible}main{overflow-x:clip}}
