@@ -1,0 +1,1 @@
+Images locales utilisées par Favore V7 : favore-hero.webp (hero), favore-web.webp (service web), favore-apps.webp (applications), favore-workflow.webp (automatisations). Elles sont intégrées au dépôt et servies depuis /public/images.
