@@ -1,50 +1,15 @@
-# Favore Studio — version retravaillée
+# Favore Studio — V10 visuels intégrés
 
-Site vitrine Next.js, React et React Three Fiber pour présenter les trois expertises de Favore : sites web, applications et automatisations.
+Cette version repart du projet Favore fourni en V8 et intègre quatre visuels locaux dans `public/images/` : une composition principale, une image pour la création web, une pour les applications et une pour l'automatisation.
 
-## Lancer le projet
+## Installation
 
-Prérequis : Node.js 18.17 ou plus récent.
+1. Décompressez l'archive.
+2. Intégrez le contenu de `favore-work` à la racine du dépôt GitHub connecté à Vercel.
+3. Poussez les modifications et vérifiez les logs de build Vercel.
 
-```bash
-npm install
-npm run dev
-```
+Les visuels sont servis localement par le site ; aucune URL d'image externe n'est utilisée. Les images des cartes de service sont chargées avec `loading="lazy"`.
 
-Ouvrir http://localhost:3000.
+## Vérification
 
-## Vérification avant publication
-
-```bash
-npm run build
-npm run start
-```
-
-Le build n'a pas pu être exécuté dans l'environnement de préparation, car les dépendances npm n'y étaient pas installées (`next: not found`). Il faut donc impérativement lancer les commandes ci-dessus et corriger toute erreur avant mise en ligne.
-
-## À vérifier avant mise en production
-
-- Tester les versions mobile et ordinateur, dont un téléphone peu puissant.
-- Vérifier la navigation au clavier, le menu mobile et les préférences de réduction des animations.
-- Confirmer que `bonjour@favore.fr` est bien l'adresse de contact souhaitée.
-- Remplacer les éventuelles informations de démonstration par des réalisations réelles ou des projets conceptuels clairement identifiés.
-- Vérifier le domaine et les métadonnées SEO avant publication.
-
-## Fichiers
-
-- `app/site.tsx` : sections et contenu du site.
-- `app/scene.tsx` : scène 3D.
-- `app/globals.css` : styles, responsive et accessibilité.
-- `app/layout.tsx` : métadonnées.
-
-
-## Favore V7 — pack d'images intégré
-Cette version contient quatre visuels WebP locaux dans `public/images/` et les références correspondantes dans `app/site.tsx`. L'image de hero remplace la scène Three.js dans la page d'accueil ; les trois cartes d'expertise utilisent leurs visuels locaux. Aucun hébergement d'image externe n'est requis.
-
-Avant publication : exécuter `npm install` puis `npm run build`, et vérifier le rendu sur mobile et ordinateur.
-
-
-## Correctif visuel V8
-- Le visuel principal utilise désormais un cadrage centré sur les appareils et le bureau, plutôt qu’une capture de page complète intégrée dans la page.
-- Les images composites ont été retirées des cartes d’expertise : les illustrations CSS dédiées restent seules, pour éviter les maquettes imbriquées et les textes minuscules.
-- Le build doit être vérifié sur Vercel avant mise en production.
+Le code source a été modifié pour référencer les nouveaux visuels. Le build Next.js n'a pas été exécuté dans cet environnement : vérifiez le déploiement Vercel avant de publier la version comme finale.
