@@ -1,5 +1,5 @@
-Favore V10 image assets. All visuals are stored locally and referenced by app/site.tsx.
-- favore-hero.webp: hero device composition
-- favore-web.webp: website design service visual
-- favore-apps.webp: applications service visual
-- favore-workflow.webp: automation service visual
+Favore image assets (webp).
+- favore-hero.webp: visuel principal (ordinateur + telephone)
+- favore-web.webp: carte Sites web
+- favore-apps.webp: carte Applications
+- favore-workflow.webp: carte Automatisation
