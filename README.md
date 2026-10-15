@@ -42,3 +42,9 @@ Le build n'a pas pu être exécuté dans l'environnement de préparation, car le
 Cette version contient quatre visuels WebP locaux dans `public/images/` et les références correspondantes dans `app/site.tsx`. L'image de hero remplace la scène Three.js dans la page d'accueil ; les trois cartes d'expertise utilisent leurs visuels locaux. Aucun hébergement d'image externe n'est requis.
 
 Avant publication : exécuter `npm install` puis `npm run build`, et vérifier le rendu sur mobile et ordinateur.
+
+
+## Correctif visuel V8
+- Le visuel principal utilise désormais un cadrage centré sur les appareils et le bureau, plutôt qu’une capture de page complète intégrée dans la page.
+- Les images composites ont été retirées des cartes d’expertise : les illustrations CSS dédiées restent seules, pour éviter les maquettes imbriquées et les textes minuscules.
+- Le build doit être vérifié sur Vercel avant mise en production.
