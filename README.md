@@ -26,6 +26,7 @@ npm start
 - Section « Tarifs indicatifs » (3 fourchettes) et FAQ enrichie (prix, délais).
 - Formulaire de contact (nom, email, type de projet, budget, message).
 - Textes réécrits (moins de formules vagues), page Mentions légales à compléter (`app/mentions-legales/page.tsx`).
+- Lisibilité (textes plus grands), boutons devis (cartes tarifs, barre fixe mobile), exemples dans les cartes de services, code 3D inutilisé supprimé.
 - Ajout d’une FAQ accessible avec des éléments natifs `details` / `summary`.
 - Liens de navigation vers les nouvelles sections et cible du lien d’évitement corrigée.
 - Métadonnées de partage clarifiées.
