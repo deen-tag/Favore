@@ -220,3 +220,10 @@ ol.steps .step p{font-size:14px;line-height:1.75;color:#b3bfcd;margin:0 0 20px;f
 .footer{padding-bottom:90px}
 }
 @media(prefers-reduced-motion:reduce){.sticky-cta{transition:none}}
+
+/* V23 — corrections mobile */
+.service-ex{margin-top:14px}
+@media(max-width:720px){
+.header-cta{font-size:0;padding:10px 12px;gap:0}
+.hero .eyebrow{font-size:10px;letter-spacing:.6px;white-space:nowrap}
+}
