@@ -126,3 +126,41 @@ body{background-image:radial-gradient(ellipse at 80% 5%,rgba(77,83,139,.12),tran
 .footer-bottom{font-size:11px}
 .eyebrow{font-size:10px}
 }
+
+
+/* V18 — tarifs, FAQ, formulaire */
+.pricing,.faq{border-top:1px solid #ffffff0d}
+.pricing-heading{max-width:640px;margin-bottom:42px}
+.pricing-heading h2,.faq-heading h2{font-size:clamp(38px,4.4vw,58px);line-height:1.08;letter-spacing:-2.7px;margin:22px 0 18px}
+.pricing-heading p,.faq-heading>p{font-size:14px;line-height:1.85;color:#9aa7b7;max-width:470px;margin:0}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.pricing-card{border:1px solid var(--line);border-radius:20px;padding:28px 24px;background:linear-gradient(145deg,#111722,#090d13);display:flex;flex-direction:column;transition:transform .25s,border-color .25s}
+.pricing-card:hover{transform:translateY(-5px);border-color:#9f8aff70}
+.pricing-tag{font:10px 'DM Mono',monospace;letter-spacing:1.4px;color:#74e5e1;text-transform:uppercase}
+.pricing-card h3{font-size:20px;letter-spacing:-.5px;margin:12px 0 20px}
+.pricing-price small{display:block;font-size:11px;color:#68788c}
+.pricing-price b{font-size:38px;letter-spacing:-1.5px;line-height:1.2}
+.pricing-price span{display:block;font-size:12px;color:#9aa7b7;margin-top:2px}
+.pricing-card ul{list-style:none;padding:0;margin:22px 0;display:grid;gap:10px;flex:1}
+.pricing-card li{font-size:13px;line-height:1.5;color:#c4cddb;padding-left:20px;position:relative}
+.pricing-card li:before{content:"✓";position:absolute;left:0;color:#9f8aff}
+.pricing-delay{font-size:12px;color:#9aa7b7;margin:0;padding-top:16px;border-top:1px solid #ffffff14}
+.pricing-note{font-size:11px;color:#68788c;margin:17px 0 0}
+.faq{display:grid;grid-template-columns:.75fr 1.25fr;gap:75px}
+.faq-list{border-top:1px solid #ffffff20}
+.faq-list details{border-bottom:1px solid #ffffff20}
+.faq-list summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 0;font-size:14px;font-weight:650;line-height:1.5}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary span{font-size:22px;font-weight:400;color:#9f8aff;transition:transform .2s}
+.faq-list details[open] summary span{transform:rotate(45deg)}
+.faq-list details p{font-size:13px;line-height:1.85;color:#9aa7b7;margin:0;padding:0 30px 22px 0;max-width:650px}
+.contact-form{display:grid;grid-template-columns:1fr 1fr;gap:14px;width:100%;max-width:520px}
+.contact-form label{display:grid;gap:6px;font-size:12px;color:#9aa7b7}
+.contact-form .full,.contact-form button,.form-ok{grid-column:1/-1}
+.contact-form input,.contact-form select,.contact-form textarea{font:inherit;font-size:14px;color:var(--text);background:#0b1119;border:1px solid #ffffff24;border-radius:12px;padding:12px 14px;width:100%}
+.contact-form textarea{resize:vertical}
+.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{outline:2px solid #9f8aff;outline-offset:1px}
+.form-ok{font-size:13px;color:#74e5e1;margin:0}
+@media(max-width:900px){.pricing-grid{grid-template-columns:1fr}.faq{gap:38px}}
+@media(max-width:720px){.pricing-heading h2,.faq-heading h2{font-size:38px;letter-spacing:-2px}.faq{grid-template-columns:1fr;gap:26px}.contact-form{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.pricing-card,.faq-list summary span{transition:none}}

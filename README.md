@@ -1,15 +1,31 @@
-# Favore Studio — V10 visuels intégrés
+# Favore Studio
 
-Cette version repart du projet Favore fourni en V8 et intègre quatre visuels locaux dans `public/images/` : une composition principale, une image pour la création web, une pour les applications et une pour l'automatisation.
+Site vitrine Next.js pour Favore : création de sites web, applications et automatisations.
 
-## Installation
+## Lancer le projet
 
-1. Décompressez l'archive.
-2. Intégrez le contenu de `favore-work` à la racine du dépôt GitHub connecté à Vercel.
-3. Poussez les modifications et vérifiez les logs de build Vercel.
+Prérequis : Node.js 18.17+.
 
-Les visuels sont servis localement par le site ; aucune URL d'image externe n'est utilisée. Les images des cartes de service sont chargées avec `loading="lazy"`.
+```bash
+npm install
+npm run dev
+```
 
-## Vérification
+Ouvrir ensuite http://localhost:3000.
 
-Le code source a été modifié pour référencer les nouveaux visuels. Le build Next.js n'a pas été exécuté dans cet environnement : vérifiez le déploiement Vercel avant de publier la version comme finale.
+## Vérifier avant publication
+
+```bash
+npm run build
+npm start
+```
+
+## Modifications de cette version
+
+- Message d’accueil recentré sur la création de sites web professionnels.
+- Section « Tarifs indicatifs » (3 fourchettes) et FAQ enrichie (prix, délais).
+- Formulaire de contact (nom, email, type de projet, budget, message).
+- Ajout d’une FAQ accessible avec des éléments natifs `details` / `summary`.
+- Liens de navigation vers les nouvelles sections et cible du lien d’évitement corrigée.
+- Métadonnées de partage clarifiées.
+
