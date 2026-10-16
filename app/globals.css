@@ -227,3 +227,6 @@ ol.steps .step p{font-size:14px;line-height:1.75;color:#b3bfcd;margin:0 0 20px;f
 .header-cta{font-size:0;padding:10px 12px;gap:0}
 .hero .eyebrow{font-size:10px;letter-spacing:.6px;white-space:nowrap}
 }
+
+/* V24 — marge entre texte et image du hero (écrans moyens) */
+@media(min-width:721px){.hero-copy{padding-right:32px}.hero-lede{max-width:440px}}
